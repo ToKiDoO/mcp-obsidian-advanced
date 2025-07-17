@@ -1,0 +1,32 @@
+[project]
+name = "mcp-obsidian-advanced"
+version = "0.0.1"
+description = "MCP server to work with Obsidian via the remote REST plugin"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { file = "LICENSE" }
+dependencies = [
+ "mcp>=1.1.0",
+ "python-dotenv>=1.0.1",
+ "requests>=2.32.3",
+ "numpy<2.0",
+ "obsidiantools>=0.10.0",
+ "networkx>=2.0",
+ "anytree>=2.8.0",
+ "pathlib2>=2.3.0; python_version<'3.4'",
+]
+[[project.authors]]
+name = "Jason Guo"
+email = "jg459@duke.edu"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.389",
+]
+
+[project.scripts]
+mcp-obsidian-advanced = "mcp_obsidian_advanced.server:main"
