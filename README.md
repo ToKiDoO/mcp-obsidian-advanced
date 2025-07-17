@@ -1,13 +1,17 @@
-Advanced MCP server to interact with Obsidian via the Local REST API community plugin, allowing AI agents (like Claude) to effectively understand your vault structure and link connections. In addition to tools for normal vault operations (read, write), this MCP server exposes advanced tools (implemented with the obsidiantools library) that allows for advanced operations such as:
+# Advanced Obsidian MCP Server
 
-* Vault tree structure discovery (understanding the tree structure of the vault)
-* NetworkX graph of all notes and their connections (allows LLMs to understand how your notes are linked)
-* Executing Obsidian commands
-* Batch read files (with metadata and connections)
-* Currently active note (allows LLMs to understand which note you are currently working on)
-* Open note/files in obsidian interface (in a new leaf)
+Advanced MCP server for interacting with Obsidian via the Local REST API community plugin. It empowers AI agents (like Claude) to deeply understand your vault's structure, links, and content—beyond basic read/write operations.
 
-This ensures AI agents can efficiently understand your vault and connections when they work alongside you.
+Key advanced features, powered by the obsidiantools library:
+- Vault tree structure discovery to map your note hierarchy
+- NetworkX graph analysis of note connections for LLM-friendly insights
+- Execution of Obsidian commands directly from AI
+- Batch file reading with metadata and link details
+- Access to your currently active note for real-time context
+- Opening notes/files in new Obsidian leaves for seamless editing
+
+This setup lets AI agents work alongside you, boosting productivity by efficiently navigating and enhancing your knowledge base.
+
 ## Components
 
 ### Tools
@@ -82,7 +86,7 @@ There are two ways to configure the environment with the Obsidian REST API Key.
       "mcp-obsidian-advanced"
     ],
     "env": {
-      "OBSIDIAN_API_KEY": "<your_api_key_here>",
+      "OBSIDIAN_API_KEY": "%3Cyour_api_key_here%3E",
       "OBSIDIAN_HOST": "<your_obsidian_host>",
       "OBSIDIAN_PORT": "<your_obsidian_port>",
       "OBSIDIAN_VAULT_PATH": "</path/to/your/vault>",
@@ -125,8 +129,7 @@ On MacOS: `~/Library/Application\ Support/Claude/claude_desktop_config.json`
 
 On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
-<details>
-  <summary>Published Servers Configuration</summary>
+Published Servers Configuration:
   
 ```json
 {
@@ -144,10 +147,8 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
   }
 }
 ```
-</details>
 
-<details>
-  <summary>Development/Unpublished Servers Configuration</summary>
+Development/Unpublished Servers Configuration
   
 ```json
 {
@@ -156,7 +157,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
       "command": "uv",
       "args": [
         "--directory",
-        "<dir_to>/mcp-obsidian-advanced",
+        "/dir/to/mcp-obsidian-advanced",
         "run",
         "mcp-obsidian"
       ],
@@ -168,7 +169,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
   }
 }
 ```
-</details>
+
 
 ## Development
 
@@ -179,13 +180,12 @@ Additional documentation for the obsidiantools library and Obsidian REST API can
 * `obsidiantools_in_15_minutes_documentation.md` is a ipynb file that demonstrates use cases for obsidiantools.
 * `obsidian_rest_api_documentation.yaml` is a yaml file that demonstrates use cases for the Obsidian REST API.
 
-
-
 ### Building
 
 To prepare the package for distribution:
 
 1. Sync dependencies and update lockfile:
+
 ```bash
 uv sync
 ```
@@ -207,4 +207,4 @@ You can also watch the server logs with this command:
 
 ```bash
 tail -n 20 -f ~/Library/Logs/Claude/mcp-server-mcp-obsidian-advanced.log
-```>)
+```
