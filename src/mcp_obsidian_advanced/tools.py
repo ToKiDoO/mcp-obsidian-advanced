@@ -18,10 +18,6 @@ from . import obsidian
 # Global Obsidian API client initialization
 api = obsidian.Obsidian(api_key=os.getenv("OBSIDIAN_API_KEY"), host=os.getenv("OBSIDIAN_HOST", "127.0.0.1"), port=os.getenv("OBSIDIAN_PORT", "27124"), vault_path=os.getenv("OBSIDIAN_VAULT_PATH", ""))
 
-# Check if required environment variables are set
-if not os.getenv("OBSIDIAN_API_KEY") or not os.getenv("OBSIDIAN_VAULT_PATH"):
-    raise ValueError(f"OBSIDIAN_API_KEY and OBSIDIAN_VAULT_PATH environment variables required. Working directory: {os.getcwd()}")
-
 TOOL_LIST_FILES_IN_DIR = "obsidian_list_files_in_dir"
 TOOL_SIMPLE_SEARCH = "obsidian_simple_search"
 TOOL_PATCH_CONTENT = "obsidian_patch_file"

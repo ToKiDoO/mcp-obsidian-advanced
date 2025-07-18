@@ -26,19 +26,20 @@ class Obsidian():
         self.api_key = api_key
         self.vault_path = vault_path
 
+        self.verify_ssl = verify_ssl
+        self.timeout = (3, 6)
+
+    def _check_credentials(self):
         if not self.vault_path:
             raise RuntimeError("OBSIDIAN_VAULT_PATH environment variable not set")
         if not self.api_key:
             raise RuntimeError("OBSIDIAN_API_KEY environment variable not set")
-        
-        
-        self.verify_ssl = verify_ssl
-        self.timeout = (3, 6)
 
     def get_base_url(self) -> str:
         return f'{self.protocol}://{self.host}:{self.port}'
     
     def _get_headers(self) -> dict:
+        self._check_credentials()
         headers = {
             'Authorization': f'Bearer {self.api_key}'
         }

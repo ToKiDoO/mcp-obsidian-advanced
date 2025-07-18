@@ -1,0 +1,49 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required: ["OBSIDIAN_API_KEY", "OBSIDIAN_VAULT_PATH"]
+    properties:
+      OBSIDIAN_API_KEY:
+        type: string
+        description: REQUIRED API key for Obsidian REST API
+      OBSIDIAN_VAULT_PATH:
+        type: string
+        description: REQUIRED Path to Obsidian vault
+      OBSIDIAN_HOST:
+        type: string
+        description: Host for Obsidian REST API
+      OBSIDIAN_PORT:
+        type: string
+        description: Port for Obsidian REST API
+      INCLUDE_TOOLS:
+        type: string
+        description: Comma-separated list of tools to include
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => {
+      const env = {
+        OBSIDIAN_API_KEY: config.OBSIDIAN_API_KEY,
+        OBSIDIAN_VAULT_PATH: config.OBSIDIAN_VAULT_PATH,
+      };
+      if (config.OBSIDIAN_HOST) {
+        env.OBSIDIAN_HOST = config.OBSIDIAN_HOST;
+      }
+      if (config.OBSIDIAN_PORT) {
+        // Smithery expects all env values to be strings
+        env.OBSIDIAN_PORT = String(config.OBSIDIAN_PORT);
+      }
+      if (config.INCLUDE_TOOLS) {
+        env.INCLUDE_TOOLS = config.INCLUDE_TOOLS;
+      }
+      return {
+        command: 'python',
+        args: ['-m', 'mcp_obsidian_advanced.server'],
+        env,
+      };
+    }
+  exampleConfig: {}
