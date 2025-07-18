@@ -4,11 +4,14 @@ FROM python:3.11-slim
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Copy the requirements file into the container at /usr/src/app
-COPY pyproject.toml .
+# Install uv for package management
+RUN pip install uv
 
-# Install any needed packages specified in pyproject.toml
-RUN pip install .
+# Copy dependency definition files
+COPY pyproject.toml uv.lock ./
+
+# Install dependencies from the lock file using uv
+RUN uv pip sync uv.lock
 
 # Copy the rest of the application's code from the host to the container
 COPY . .
