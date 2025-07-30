@@ -1,0 +1,39 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'mcp-obsidian-advanced', args: [], env: { OBSIDIAN_API_KEY: config.obsidianApiKey, OBSIDIAN_VAULT_PATH: config.obsidianVaultPath, OBSIDIAN_HOST: config.obsidianHost, OBSIDIAN_PORT: String(config.obsidianPort), INCLUDE_TOOLS: config.includeTools } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - obsidianApiKey
+      - obsidianVaultPath
+    properties:
+      obsidianApiKey:
+        type: string
+        description: API key for Obsidian REST API plugin
+      obsidianVaultPath:
+        type: string
+        description: Absolute path to the Obsidian vault
+      obsidianHost:
+        type: string
+        default: 127.0.0.1
+        description: Host for Obsidian REST API plugin
+      obsidianPort:
+        type: number
+        default: 27124
+        description: Port for Obsidian REST API plugin
+      includeTools:
+        type: string
+        default: ""
+        description: Comma-separated list of tools to include
+  exampleConfig:
+    obsidianApiKey: 1234abcd-5678-efgh-ijkl-9012mnopqrst
+    obsidianVaultPath: /home/user/obsidian-vault
+    obsidianHost: 127.0.0.1
+    obsidianPort: 27124
+    includeTools: obsidian_understand_vault,obsidian_simple_search
