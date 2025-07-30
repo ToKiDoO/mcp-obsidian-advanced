@@ -1,5 +1,7 @@
 # Advanced Obsidian MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced)](https://smithery.ai/server/@ToKiDoO/mcp-obsidian-advanced)
+
 Advanced MCP server for interacting with Obsidian via the Local REST API community plugin. It empowers AI agents (like Claude) to deeply understand your vault's structure, links, and content—beyond basic read/write operations.
 
 Key advanced features, powered by the obsidiantools library:
@@ -115,6 +117,14 @@ INCLUDE_TOOLS=name_of_tool1,name_of_tool2,...
 ## Quickstart
 
 ### Install
+
+### Installing via Smithery
+
+To install Advanced Obsidian MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@ToKiDoO/mcp-obsidian-advanced):
+
+```bash
+npx -y @smithery/cli install @ToKiDoO/mcp-obsidian-advanced --client claude
+```
 
 #### Obsidian REST API
 
