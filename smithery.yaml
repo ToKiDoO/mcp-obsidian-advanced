@@ -36,4 +36,4 @@ startCommand:
     obsidianVaultPath: /home/user/obsidian-vault
     obsidianHost: 127.0.0.1
     obsidianPort: 27124
-    includeTools: obsidian_understand_vault,obsidian_simple_search
+    includeTools: ""
