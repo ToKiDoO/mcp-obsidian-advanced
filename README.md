@@ -2,6 +2,10 @@
 
 Advanced MCP server for interacting with Obsidian via the Local REST API community plugin. It empowers AI agents (like Claude) to deeply understand your vault's structure, links, and content—beyond basic read/write operations.
 
+<a href="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Advanced Obsidian Server MCP server" />
+</a>
+
 Key advanced features, powered by the obsidiantools library:
 - Vault tree structure discovery to map your note hierarchy
 - NetworkX graph analysis of note connections for LLM-friendly insights
