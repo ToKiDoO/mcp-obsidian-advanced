@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png)](https://mseep.ai/app/tokidoo-mcp-obsidian-advanced)
+
 # Advanced Obsidian MCP Server
 <a href="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Advanced Obsidian Server MCP server" />
