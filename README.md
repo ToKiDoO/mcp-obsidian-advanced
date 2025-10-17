@@ -1,3 +1,5 @@
+# Advanced MCP Tools for Obsidian
+
 <p>
   <a href="https://mseep.ai/app/tokidoo-mcp-obsidian-advanced">
     <img src="https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png" alt="MseeP.ai Security Assessment Badge">
