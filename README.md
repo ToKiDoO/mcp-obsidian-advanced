@@ -1,5 +1,5 @@
-[![smithery badge](https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced)]
 [![MseeP.ai Security Assessment Badge](https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png)](https://mseep.ai/app/tokidoo-mcp-obsidian-advanced)
+[![smithery badge](https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced)]
 
 # Advanced Obsidian MCP Server
 <a href="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced">
