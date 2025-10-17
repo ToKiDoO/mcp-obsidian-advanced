@@ -6,8 +6,6 @@
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Advanced Obsidian Server MCP server" />
 </a>
 
-(https://smithery.ai/server/@ToKiDoO/mcp-obsidian-advanced)
-
 Advanced MCP server for interacting with Obsidian via the Local REST API community plugin. It empowers AI agents (like Claude) to deeply understand your vault's structure, links, and content—beyond basic read/write operations.
 
 Key advanced features, powered by the obsidiantools library:
