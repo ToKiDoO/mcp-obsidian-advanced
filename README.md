@@ -1,10 +1,11 @@
+[![smithery badge](https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced)]
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png)](https://mseep.ai/app/tokidoo-mcp-obsidian-advanced)
+
 # Advanced Obsidian MCP Server
 <a href="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Advanced Obsidian Server MCP server" />
 </a>
 
-[![smithery badge](https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced)]
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png)](https://mseep.ai/app/tokidoo-mcp-obsidian-advanced)
 (https://smithery.ai/server/@ToKiDoO/mcp-obsidian-advanced)
 
 Advanced MCP server for interacting with Obsidian via the Local REST API community plugin. It empowers AI agents (like Claude) to deeply understand your vault's structure, links, and content—beyond basic read/write operations.
