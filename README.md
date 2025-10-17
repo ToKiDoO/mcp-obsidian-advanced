@@ -1,10 +1,15 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png)](https://mseep.ai/app/tokidoo-mcp-obsidian-advanced)
-[![smithery badge](https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced)]
+<p>
+  <a href="https://mseep.ai/app/tokidoo-mcp-obsidian-advanced">
+    <img src="https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png" alt="MseeP.ai Security Assessment Badge" height="28">
+  </a>
+  <a href="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced">
+    <img src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Glama MCP Server Badge" height="28">
+  </a>
+  <a href="https://smithery.ai/@ToKiDoO/mcp-obsidian-advanced">
+    <img src="https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced" alt="Smithery Badge" height="28">
+  </a>
+</p>
 
-# Advanced Obsidian MCP Server
-<a href="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Advanced Obsidian Server MCP server" />
-</a>
 
 Advanced MCP server for interacting with Obsidian via the Local REST API community plugin. It empowers AI agents (like Claude) to deeply understand your vault's structure, links, and content—beyond basic read/write operations.
 
