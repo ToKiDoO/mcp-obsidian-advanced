@@ -3,7 +3,7 @@
     <img src="https://mseep.net/pr/tokidoo-mcp-obsidian-advanced-badge.png" alt="MseeP.ai Security Assessment Badge">
   </a>&nbsp;&nbsp;
   <a href="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced">
-    <img src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Glama MCP Server Badge">
+    <img src="https://glama.ai/mcp/servers/@ToKiDoO/mcp-obsidian-advanced/badge" alt="Glama MCP Server Badge" width="380" height="200">
   </a>&nbsp;&nbsp;
   <a href="https://smithery.ai/@ToKiDoO/mcp-obsidian-advanced">
     <img src="https://smithery.ai/badge/@ToKiDoO/mcp-obsidian-advanced" alt="Smithery Badge" height="56">
